@@ -5,7 +5,7 @@ function addFoodItem() {
     foodItemDiv.className = "foodItem";
 
     var choiceHeading = document.createElement("h3");
-    choiceHeading.textContent = " Extra Choice";
+    choiceHeading.textContent = " Extra Choice:";
 
     var foodSelect = document.createElement("select");
     foodSelect.name = "streetFoods";
@@ -19,7 +19,7 @@ function addFoodItem() {
 
     var quantityHeading = document.createElement("h3");
     quantityHeading.className = "choices";
-    quantityHeading.textContent = "Quantity";
+    quantityHeading.textContent = "Quantity:";
 
     var quantityInput = document.createElement("input");
     quantityInput.type = "text";
