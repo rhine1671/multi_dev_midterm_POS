@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple POS | Multi Dev</title>
+    <style>
+        body {
+            font-family: 'Helvetica';
+            font-size: 2em;
+            background-color: aqua;
+            
+        }
+        input, select {
+            height: 50px;
+            width: 300px;
+            font-size: 1.2em;
+        }
+        button {
+            height: 100px;
+            width: 200px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to the canteen! Here are street foods menu.</h2>
+    <h3>Prices are shown below.</h3>
+    <ul>
+        <li>Burger - 60 pesos</li>
+        <li>Fries - 50 pesos</li>
+        <li>Fishbol - 20 pesos</li>
+        <li>Kikiam - 25 pesos</li>
+    </ul>
+    <button type="button" onclick="addFoodItem()">Add a food item</button>
+    <div id="foodItems">
+        <form action="" id="foodForm">
+            <div class="foodItem">
+                <h3>Choice</h3>
+                <select name="streetFoods">
+                    <option value="burger">Burger</option>
+                    <option value="fries">Fries</option>
+                    <option value="fishbol">Fishbol</option>
+                    <option value="kikiam">Kikiam</option>
+                </select>
+            </div>
+            <div class="foodItem">
+                <h3 class="choices">Quantity</h3>
+                <input type="text" name="quantity">
+            </div>
+        </form>
+    </div>
+    
+    
+    <div class="pay">
+        <h3 class="choices">Pay</h3>
+        <input type="text" id="cash" name="cash">
+        <button type="button" onclick="pay()">Pay</button>
+    </div>
+    <script src="posSystem.js">
+     
+    </script>
+</body>
+</html>
